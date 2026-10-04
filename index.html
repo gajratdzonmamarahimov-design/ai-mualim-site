@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="tg">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ghayratjon / Profile</title>
+<style>
+:root{--bg:#f4f0e8;--paper:#fffdf8;--ink:#111827;--muted:#667085;--line:#d8d2c6;--accent:#ff5a4f;--soft:#ece7dc}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:Arial,Helvetica,sans-serif}.site{max-width:1250px;margin:auto;padding:0 28px}.top{height:78px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between}.brand{font-weight:900;letter-spacing:-1px;text-decoration:none;color:var(--ink);font-size:20px}.brand span{color:var(--accent)}.nav{display:flex;gap:22px;align-items:center}.nav a{color:var(--ink);text-decoration:none;font-size:14px}.tools{display:flex;gap:8px}.tools button,.tools select{border:1px solid var(--line);background:var(--paper);padding:9px 11px;border-radius:8px}.hero{display:grid;grid-template-columns:1.05fr .95fr;gap:60px;padding:85px 0}.eyebrow{font-size:12px;font-weight:800;letter-spacing:2px;color:var(--accent)}h1,h2{font-family:Georgia,serif;line-height:.98;letter-spacing:-2px;margin:18px 0}h1{font-size:clamp(52px,7vw,92px)}h2{font-size:clamp(42px,5vw,68px)}h1 em,h2 em{color:var(--accent);font-weight:400}.lede{max-width:610px;font-size:18px;line-height:1.7;color:var(--muted)}.buttons{display:flex;gap:12px;align-items:center;margin:30px 0}.btn{border:0;border-radius:8px;padding:14px 18px;font-weight:800;cursor:pointer;text-decoration:none;display:inline-block}.primary{background:var(--accent);color:white}.secondary{background:transparent;color:var(--ink);border:1px solid var(--line)}.meta{display:flex;gap:30px;margin-top:55px}.meta strong{display:block;font-size:28px}.meta span{font-size:12px;color:var(--muted)}.visual{position:relative;min-height:470px;background:#182337;border-radius:4px;overflow:hidden}.visual:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 65% 35%,#ff796d55,transparent 35%),linear-gradient(135deg,#253b5f,#111827)}.desk{position:absolute;left:12%;right:12%;bottom:15%;height:28%;background:#b98d68;transform:rotate(-4deg);box-shadow:0 25px 45px #0006}.laptop{position:absolute;width:48%;height:28%;left:25%;top:27%;background:#151a24;border:10px solid #343b49;border-radius:8px;transform:skew(-5deg);box-shadow:0 18px 30px #0007}.screen{position:absolute;inset:8%;background:linear-gradient(135deg,#eef2f7,#9aa7bb)}.book{position:absolute;width:28%;height:15%;left:13%;bottom:29%;background:#fff7e7;transform:rotate(-9deg);box-shadow:0 12px 20px #0005}.stamp{position:absolute;right:22px;top:22px;border:1px solid #fff8;color:#fff;padding:16px;border-radius:50%;font-weight:900;transform:rotate(8deg)}.caption{position:absolute;left:20px;bottom:18px;color:#fff;font-size:11px;letter-spacing:1px}.section{padding:80px 0}.heading{max-width:700px}.builder{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:35px}.panel{background:var(--paper);border:1px solid var(--line);padding:28px;border-radius:5px;box-shadow:0 12px 40px #1b23300b}.formgrid{display:grid;grid-template-columns:1fr 1fr;gap:15px}.field{display:flex;flex-direction:column;gap:7px}.wide{grid-column:1/-1}.field label,.field span{font-size:11px;font-weight:800;letter-spacing:1px;color:var(--muted)}input,select{width:100%;padding:13px;border:1px solid var(--line);border-radius:7px;background:#fff;color:var(--ink);font-size:15px;outline:none}input:focus,select:focus{border-color:var(--accent)}.form-actions{display:flex;gap:10px;margin-top:20px}.note{font-size:12px;color:var(--muted);margin-top:14px}.card{position:relative;overflow:hidden}.card:after{content:"AI";position:absolute;right:-15px;bottom:-45px;font:900 150px Arial;color:#11182708}.cardtop{display:flex;justify-content:space-between;font-size:11px;letter-spacing:1px;color:var(--muted)}.status{color:#2d8a57}.avatar{width:70px;height:70px;border-radius:50%;background:var(--ink);color:white;display:grid;place-items:center;font-weight:900;font-size:23px;margin:35px 0 15px}.kicker{font-size:11px;color:var(--accent);font-weight:900;letter-spacing:1px}.card h3{font:700 38px Georgia,serif;margin:8px 0}.location{color:var(--muted)}.dream{margin:30px 0;padding:18px;border-left:4px solid var(--accent);background:var(--soft)}.dream span,.details span{display:block;font-size:10px;color:var(--muted);letter-spacing:1px;font-weight:800}.dream strong{display:block;margin-top:7px;font-size:19px}.details{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;border-top:1px solid var(--line);padding-top:20px}.details strong{display:block;margin-top:7px;font-size:14px}.skills{margin-top:28px}.skill{display:grid;grid-template-columns:70px 1fr 100px;gap:10px;align-items:center;margin:12px 0;font-size:13px}.track{height:7px;background:var(--soft);border-radius:20px;overflow:hidden}.track i{display:block;height:100%;background:var(--accent);border-radius:20px}.copy{width:100%;margin-top:15px;background:var(--ink);color:#fff}.direction{display:grid;grid-template-columns:.8fr 1.2fr;gap:70px;align-items:center}.art{min-height:430px;background:linear-gradient(145deg,#182337,#374d6d);position:relative;overflow:hidden}.art:before,.art:after{content:"";position:absolute;border:1px solid #ffffff44}.art:before{width:55%;height:55%;left:12%;top:17%;transform:rotate(-8deg)}.art:after{width:45%;height:45%;right:10%;bottom:13%;transform:rotate(9deg)}.orb{position:absolute;width:150px;height:150px;border-radius:50%;background:#ff5a4f;right:17%;top:23%;opacity:.9}.list{margin-top:30px}.list div{display:grid;grid-template-columns:40px 1fr;gap:8px;border-top:1px solid var(--line);padding:18px 0}.list span{color:var(--accent);font-weight:900}.list strong{font-size:17px}.list small{grid-column:2;color:var(--muted);line-height:1.5}.footer{border-top:1px solid var(--line);padding:28px 0 40px;display:flex;justify-content:space-between;color:var(--muted);font-size:13px}.footer a{color:var(--ink);text-decoration:none}.dark{--bg:#0e1420;--paper:#151d2b;--ink:#f3f5f8;--muted:#aab4c3;--line:#2b3545;--soft:#202a3a}.dark input,.dark select{background:#101722;color:var(--ink)}.dark .copy{background:#f3f5f8;color:#101722}@media(max-width:850px){.nav a{display:none}.hero,.builder,.direction{grid-template-columns:1fr}.hero{padding:55px 0}.visual{min-height:380px}.details{grid-template-columns:1fr}.footer{flex-direction:column;gap:12px}.site{padding:0 16px}}@media(max-width:560px){h1{font-size:50px}.meta{gap:16px;flex-wrap:wrap}.formgrid{grid-template-columns:1fr}.wide{grid-column:auto}.skill{grid-template-columns:65px 1fr}.skill b{display:none}.panel{padding:20px}.visual{min-height:300px}}
+</style>
+</head>
+<body>
+<div class="site">
+<header class="top">
+<a class="brand" href="#top">GHAYRATJON<span>/profile</span></a>
+<nav class="nav">
+<a href="#builder" data-i18n="builderNav">Профил соз</a>
+<a href="#direction" data-i18n="directionNav">Самти ман</a>
+<div class="tools"><select id="lang"><option value="tg">TJ</option><option value="uz">UZ</option><option value="ru">RU</option><option value="en">EN</option></select><button id="theme">☾</button></div>
+</nav>
+</header>
+
+<section class="hero" id="top">
+<div>
+<p class="eyebrow" data-i18n="eyebrow">ПРОФИЛИ ДОНИШҶӮ / 01</p>
+<h1 data-i18n="hero1">Як қадами равшан<br><em>ба сӯи оянда.</em></h1>
+<p class="lede" data-i18n="heroText">Профили шахсии Ғайратҷон — саҳифаи зинда барои нақшаи таҳсил, рушди Python ва орзуи сохтани AI-и фоиданок.</p>
+<div class="buttons"><a class="btn primary" href="#builder" data-i18n="create">Профили худро созед →</a><a class="btn secondary" href="#direction" data-i18n="goal">Мақсадро бинед ↓</a></div>
+<div class="meta"><div><strong>03</strong><span data-i18n="months">моҳ пешрафт</span></div><div><strong>02</strong><span data-i18n="languages">забон дар рушд</span></div><div><strong>01</strong><span data-i18n="dream">орзуи калон</span></div></div>
+</div>
+<div class="visual"><div class="desk"></div><div class="laptop"><div class="screen"></div></div><div class="book"></div><div class="stamp">AI<br><small>FUTURE</small></div><div class="caption">FIELD NOTE / 001 — STUDY · BUILD · REPEAT</div></div>
+</section>
+
+<section class="section" id="builder">
+<div class="heading"><p class="eyebrow">02 / <span data-i18n="builderNav">ПРОФИЛ СОЗ</span></p><h2 data-i18n="builderTitle">Маълумоти худро<br><em>ба самт табдил деҳ.</em></h2><p class="lede" data-i18n="builderText">Майдонҳоро пур кунед — корти профил фавран нав мешавад.</p></div>
+<div class="builder">
+<form class="panel" id="form">
+<div class="formgrid">
+<div class="field wide"><span data-i18n="name">Номи пурра</span><input id="name" value="Gayratjon Mamarakhimov" required></div>
+<div class="field"><span data-i18n="age">Синну сол</span><input id="age" type="number" value="17" required></div>
+<div class="field"><span data-i18n="city">Шаҳр / кишвар</span><input id="city" value="Bokhtar, Tajikistan" required></div>
+<div class="field wide"><span data-i18n="school">Мактаб</span><input id="school" value="School No. 18"></div>
+<div class="field wide"><span data-i18n="dreamField">Орзуи асосӣ</span><input id="dreamField" value="Study artificial intelligence" required></div>
+<div class="field"><span data-i18n="subject">Фани дӯстдошта</span><input id="subject" value="English & Science"></div>
+<div class="field"><span data-i18n="job">Касби оянда</span><input id="job" value="AI specialist"></div>
+<div class="field"><span data-i18n="english">Сатҳи English</span><select id="english"><option>Beginner</option><option selected>Intermediate</option><option>Upper-intermediate</option><option>Advanced</option></select></div>
+<div class="field"><span data-i18n="python">Сатҳи Python</span><select id="python"><option>First steps</option><option selected>Foundation</option><option>Confident</option><option>Project-ready</option></select></div>
+</div>
+<div class="form-actions"><button class="btn primary" type="submit" data-i18n="build">✦ Профилро соз</button><button class="btn secondary" type="button" id="reset" data-i18n="reset">↻ Аз нав</button></div>
+<p class="note" data-i18n="private">Маълумот танҳо дар браузери шумо истифода мешавад.</p>
+</form>
+
+<aside class="panel card">
+<div class="cardtop"><span>PROFILE / LIVE VIEW</span><span class="status" id="status">● draft</span></div>
+<div class="avatar" id="avatar">GM</div><div class="kicker" data-i18n="student">ДОНИШҶӮ / СОЗАНДА</div>
+<h3 id="cardName">Gayratjon Mamarakhimov</h3><p class="location"><span id="cardCity">Bokhtar, Tajikistan</span> · <span id="cardAge">17</span></p>
+<div class="dream"><span data-i18n="north">САМТИ АСОСӢ</span><strong id="cardDream">Study artificial intelligence</strong></div>
+<div class="details"><div><span data-i18n="education">ТАҲСИЛ</span><strong id="cardSchool">School No. 18</strong></div><div><span data-i18n="focus">ФОКУС</span><strong id="cardSubject">English & Science</strong></div><div><span data-i18n="role">НАҚШИ ОЯНДА</span><strong id="cardJob">AI specialist</strong></div></div>
+<div class="skills"><div class="skill"><span>English</span><span class="track"><i id="engBar" style="width:52%"></i></span><b id="engText">Intermediate</b></div><div class="skill"><span>Python</span><span class="track"><i id="pyBar" style="width:44%"></i></span><b id="pyText">Foundation</b></div></div>
+<button class="btn copy" id="copy" data-i18n="copy">Копировать текст</button>
+</aside>
+</div>
+</section>
+
+<section class="section direction" id="direction">
+<div class="art"><div class="orb"></div></div>
+<div><p class="eyebrow">03 / <span data-i18n="directionNav">САМТИ МАН</span></p><h2 data-i18n="directionTitle">Забонро омӯз.<br><em>Асбоб соз.</em></h2><p class="lede" data-i18n="directionText">Англисӣ барои кушодани дарҳо. Python барои сохтани чизҳои воқеӣ. AI барои табдил додани ғояҳо ба ёрии одамон.</p>
+<div class="list"><div><span>01</span><strong>English / IELTS</strong><small data-i18n="engDesc">Эътимод барои таҳсил дар хориҷа.</small></div><div><span>02</span><strong>Python / Projects</strong><small data-i18n="pyDesc">Машқро ба асбобҳои корӣ табдил деҳ.</small></div><div><span>03</span><strong>AI / Future</strong><small data-i18n="aiDesc">Технологияро барои кӯмак ба одамон истифода бар.</small></div></div>
+</div>
+</section>
+
+<footer class="footer"><span data-i18n="footer">Бо сабр дар Бохтар сохта шудааст.</span><span>© 2026 Ghayratjon Mamarakhimov</span><a href="#top">↑ Top</a></footer>
+</div>
+
+<script>
+const $=id=>document.getElementById(id);
+const langs={
+tg:{builderNav:"Профил соз",directionNav:"Самти ман",eyebrow:"ПРОФИЛИ ДОНИШҶӮ / 01",hero1:"Як қадами равшан<br><em>ба сӯи оянда.</em>",heroText:"Профили шахсии Ғайратҷон — саҳифаи зинда барои нақшаи таҳсил, рушди Python ва орзуи сохтани AI-и фоиданок.",create:"Профили худро созед →",goal:"Мақсадро бинед ↓",months:"моҳ пешрафт",languages:"забон дар рушд",dream:"орзуи калон",builderTitle:"Маълумоти худро<br><em>ба самт табдил деҳ.</em>",builderText:"Майдонҳоро пур кунед — корти профил фавран нав мешавад.",name:"Номи пурра",age:"Синну сол",city:"Шаҳр / кишвар",school:"Мактаб",dreamField:"Орзуи асосӣ",subject:"Фани дӯстдошта",job:"Касби оянда",english:"Сатҳи English",python:"Сатҳи Python",build:"✦ Профилро соз",reset:"↻ Аз нав",private:"Маълумот танҳо дар браузери шумо истифода мешавад.",student:"ДОНИШҶӮ / СОЗАНДА",north:"САМТИ АСОСӢ",education:"ТАҲСИЛ",focus:"ФОКУС",role:"НАҚШИ ОЯНДА",copy:"Копировать текст",directionTitle:"Забонро омӯз.<br><em>Асбоб соз.</em>",directionText:"Англисӣ барои кушодани дарҳо. Python барои сохтани чизҳои воқеӣ. AI барои табдил додани ғояҳо ба ёрии одамон.",engDesc:"Эътимод барои таҳсил дар хориҷа.",pyDesc:"Машқро ба асбобҳои корӣ табдил деҳ.",aiDesc:"Технологияро барои кӯмак ба одамон истифода бар.",footer:"Бо сабр дар Бохтар сохта шудааст."},
+uz:{builderNav:"Profil yarat",directionNav:"Mening yo'nalishim",eyebrow:"TALABA PROFILI / 01",hero1:"Kelajak sari<br><em>aniq bir qadam.</em>",heroText:"G'ayratjonning shaxsiy profili — ta'lim rejasi, Python rivoji va foydali AI yaratish orzusini bir joyga jamlaydi.",create:"Profilimni yaratish →",goal:"Maqsadni ko'rish ↓",months:"oylik progress",languages:"rivojlanayotgan til",dream:"katta orzu",builderTitle:"Ma'lumotni<br><em>yo'nalishga aylantir.</em>",builderText:"Maydonlarni to'ldiring — profil kartasi darhol yangilanadi.",name:"To'liq ism",age:"Yosh",city:"Shahar / mamlakat",school:"Maktab",dreamField:"Asosiy orzu",subject:"Sevimli fan",job:"Kelajak kasbi",english:"English darajasi",python:"Python darajasi",build:"✦ Profil yaratish",reset:"↻ Qaytarish",private:"Ma'lumotlar faqat brauzeringizda ishlatiladi.",student:"TALABA / YARATUVCHI",north:"ASOSIY YO'NALISH",education:"TA'LIM",focus:"YO'NALISH",role:"KELAJAK ROLI",copy:"Profil matnini nusxalash",directionTitle:"Tilni o'rgan.<br><em>Vosita yarat.</em>",directionText:"Ingliz tili — yangi eshiklar uchun. Python — real narsalar yaratish uchun. AI — g'oyalarni odamlarga yordamga aylantirish uchun.",engDesc:"Chet elda o'qish uchun ishonch.",pyDesc:"Mashqni ishlaydigan vositalarga aylantir.",aiDesc:"Texnologiyadan odamlarga yordam berish uchun foydalan.",footer:"Sabr bilan Bokhtarda yaratildi."},
+ru:{builderNav:"Создать профиль",directionNav:"Моё направление",eyebrow:"ПРОФИЛЬ СТУДЕНТА / 01",hero1:"Один ясный шаг<br><em>к будущему.</em>",heroText:"Личный профиль Гайратджона — живая страница для учебного плана, развития Python и мечты создавать полезный AI.",create:"Создать свой профиль →",goal:"Посмотреть цель ↓",months:"месяца движения",languages:"язык в развитии",dream:"большая мечта",builderTitle:"Преврати данные<br><em>в направление.</em>",builderText:"Заполни поля — карточка профиля обновится сразу.",name:"Полное имя",age:"Возраст",city:"Город / страна",school:"Школа",dreamField:"Главная мечта",subject:"Любимый предмет",job:"Будущая профессия",english:"Уровень English",python:"Уровень Python",build:"✦ Создать профиль",reset:"↻ Сбросить",private:"Данные используются только в вашем браузере.",student:"СТУДЕНТ / СОЗДАТЕЛЬ",north:"ГЛАВНОЕ НАПРАВЛЕНИЕ",education:"ОБРАЗОВАНИЕ",focus:"ФОКУС",role:"БУДУЩАЯ РОЛЬ",copy:"Копировать текст",directionTitle:"Учи язык.<br><em>Создавай инструмент.</em>",directionText:"Английский — чтобы открывать двери. Python — чтобы создавать реальные вещи. AI — чтобы превращать идеи в помощь людям.",engDesc:"Уверенность для учёбы за рубежом.",pyDesc:"Превращай практику в рабочие инструменты.",aiDesc:"Используй технологии, чтобы помогать людям.",footer:"Создано с терпением в Бохтаре."},
+en:{builderNav:"Profile builder",directionNav:"My direction",eyebrow:"STUDENT PROFILE / 01",hero1:"One clear step<br><em>toward the future.</em>",heroText:"Ghayratjon's personal profile — a living page for study plans, Python growth, and the dream of building useful AI.",create:"Build your profile →",goal:"See the goal ↓",months:"months of momentum",languages:"language in progress",dream:"big dream in motion",builderTitle:"Turn your story<br><em>into direction.</em>",builderText:"Fill the fields. Your profile card updates instantly.",name:"Full name",age:"Age",city:"City / country",school:"School",dreamField:"Main dream",subject:"Favorite subject",job:"Future job",english:"English level",python:"Python level",build:"✦ Build profile",reset:"↻ Reset",private:"Your data is used only in this browser.",student:"STUDENT / BUILDER",north:"MY NORTH STAR",education:"EDUCATION",focus:"FOCUS",role:"FUTURE ROLE",copy:"Copy profile text",directionTitle:"Learn the language.<br><em>Build the tool.</em>",directionText:"English to open doors. Python to build real things. AI to turn ideas into useful help for people.",engDesc:"Build confidence to study abroad.",pyDesc:"Turn practice into working tools.",aiDesc:"Use technology to help people.",footer:"Made with patience in Bokhtar."}
+};
+function applyLang(){
+ const l=langs[$("lang").value];
+ document.querySelectorAll("[data-i18n]").forEach(e=>{const k=e.dataset.i18n;if(l[k]!=null)e.innerHTML=l[k]});
+ document.documentElement.lang=$("lang").value;
+ localStorage.setItem("gj-lang",$("lang").value);
+}
+function update(){
+ const name=$("name").value||"Ghayratjon";
+ $("cardName").textContent=name;$("cardAge").textContent=$("age").value;$("cardCity").textContent=$("city").value;
+ $("cardSchool").textContent=$("school").value;$("cardDream").textContent=$("dreamField").value;$("cardSubject").textContent=$("subject").value;$("cardJob").textContent=$("job").value;
+ $("engText").textContent=$("english").value;$("pyText").textContent=$("python").value;
+ $("avatar").textContent=name.trim().split(/\s+/).map(x=>x[0]).slice(0,2).join("").toUpperCase();
+ const ep={Beginner:27,Intermediate:52,"Upper-intermediate":72,Advanced:92}, pp={"First steps":22,Foundation:44,Confident:68,"Project-ready":90};
+ $("engBar").style.width=(ep[$("english").value]||52)+"%";$("pyBar").style.width=(pp[$("python").value]||44)+"%";
+}
+document.querySelectorAll("input,select").forEach(e=>e.addEventListener("input",update));
+$("form").addEventListener("submit",e=>{e.preventDefault();update();$("status").textContent="● saved";$("status").style.color="#2d8a57"});
+$("reset").addEventListener("click",()=>{location.reload()});
+$("theme").addEventListener("click",()=>{document.body.classList.toggle("dark");$("theme").textContent=document.body.classList.contains("dark")?"☀":"☾";localStorage.setItem("gj-dark",document.body.classList.contains("dark"))});
+$("copy").addEventListener("click",async()=>{const text=`Name: ${$("name").value}\nAge: ${$("age").value}\nLocation: ${$("city").value}\nSchool: ${$("school").value}\nDream: ${$("dreamField").value}\nFocus: ${$("subject").value}\nFuture role: ${$("job").value}\nEnglish: ${$("english").value}\nPython: ${$("python").value}`;try{await navigator.clipboard.writeText(text);$("copy").textContent="✓ Copied";setTimeout(()=>{$("copy").textContent=langs[$("lang").value].copy},1500)}catch{}});
+$("lang").value=localStorage.getItem("gj-lang")||"tg";applyLang();if(localStorage.getItem("gj-dark")==="true"){document.body.classList.add("dark");$("theme").textContent="☀"}update();
+</script>
+</body>
+</html>
